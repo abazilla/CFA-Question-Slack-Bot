@@ -10,10 +10,9 @@ require 'slack-ruby-bot'
 #Only have 1 instance of each personDONE
 #Remove self from groupDONE
 # Add help DONE
-# add a timer
+# add a timerAdd
 #command to show list
 #make an env file and add it to the git ignore
-
 
 class QuestionBot < SlackRubyBot::Bot
   question_array = []
@@ -63,12 +62,5 @@ class QuestionBot < SlackRubyBot::Bot
   end
 
 end
-
-# class QuestionBot < SlackRubyBot::Bot
-#    help do
-#     title 'Question Bot'
-#     desc 'This bot stores questions in an array'
-#   end
-# end
 
 QuestionBot.run
